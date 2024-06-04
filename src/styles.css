@@ -1,0 +1,680 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  .header {
+    padding: 16px 0;
+    width: 100%;
+  }
+  header, main, footer {
+    width: 100%;
+  }
+  .header-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo-img {
+    height: 32px;
+    width: 32px;
+  }
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-link {
+    color: #2d3748;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+  }
+  .nav-link:hover {
+    color: #f56565;
+  }
+  .nav-link.active {
+    color: #f56565;
+    font-weight: bold;
+  }
+  .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .download-btn,
+  .get-started-btn {
+    font-size: 3.2vw;
+    background-color: black;
+    color: white;
+  }
+  .download-btn:hover,
+  .get-started-btn:hover {
+    background-color: #333;
+  }
+  .main-title {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.74);
+  }
+  .main-description {
+    color: #718096;
+    margin-bottom: 32px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+  .watch-video-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .play-icon {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  .main {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-page-info-section {
+    margin: 0 auto;
+  }
+  .screen-shot-1 {
+    transform: scale(0.5);
+    position: relative;
+    left: -180px;
+    top: -300px;
+  }
+  .app-img {
+    position: relative;
+    left: -85px;
+    top: -80px;
+    vertical-align: baseline;
+    transform: scale(0.6);
+  }
+  .details {
+    max-width: 600px;
+  }
+  .details h1 {
+    font-size: 2.5vw;
+    margin: 0;
+    color: #e74c3c;
+  }
+  .details h2,
+  .detail-p,
+  .headline {
+    font-size: 2vw;
+    margin: 10px 0;
+  }
+  .feature {
+    align-items: start;
+    margin: 10px 0;
+  }
+  .feature img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .feature p {
+    margin: 0;
+    color: #555;
+  }
+  .section {
+    padding: 40px 0;
+    height: auto;
+  }
+  .section-title {
+    font-size: 3vw;
+    color: coral;
+    padding:0px 0px 0px 10px;
+  }
+  .section-sub-title{
+    padding:0px 0px 0px 10px;
+  }
+  .h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .text-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .text-content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .text-content ul li img {
+    margin-right: 20px;
+  }
+  .text-content h4{
+    font-size: 4.5vw;
+  }
+  .text-content p{
+    font-size:3.7vw;
+  }.advantage-text h4{
+    padding-left: 10px;
+    font-size: 4.5vw;
+  }
+  .advantage-text p{
+    font-size:3.4vw;
+    padding-left: 10px;
+  }
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+  .advantage-text img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 5px;
+  }.text-content img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 10px;
+  }
+  .advantage-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial p {
+    margin-bottom: 20px;
+  }
+  .testimonial h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: bolder;
+  }
+  .testimonial-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  .testimonial-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+  }
+  .faq {
+    text-align: start;
+  }
+  .faq-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .advantage2,.advantage {
+    display: flex;    
+  }
+  .advantage{
+    flex-direction: column;
+  }
+  .advantage2{
+    flex-direction: column-reverse;
+  }
+  .faq-item {
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    height: 120px;
+  }
+  .faq-item h4 {
+    padding: 10px 15px 0px 10px;
+    font-size: 4.5vw;
+    margin-bottom: 10px;
+  }
+  .faq-item:nth-child(1),
+  .faq-item:nth-child(3),
+  .faq-item:nth-child(5) {
+    background-color:rgb(252, 105, 105);
+    color: #fff;
+  }
+  .faq-item:nth-child(4),
+  .faq-item:nth-child(2),
+  .faq-item:nth-child(6){
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+  }
+  .faq-item p {
+    font-size: 3.5vw;  
+    padding: 0px 15px 0px 10px;
+  }
+  .cta {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    top: -180px;
+    text-align: start;
+  }
+  .cta h2 {
+    font-size: 4vw;;
+    margin-bottom: 20px;
+    margin-left: 10%;
+  }
+  .cta p {
+    font-size: 2vw;
+    margin-left: 10%;
+    margin-bottom: 20px;
+  }.cta button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  .testimonial-title{
+    text-align: center;
+  }
+  
+  .company-details{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .company-details ul{
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .footer {
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-logo-img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .footer-logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 200px;
+  }
+  
+  .footer-column {
+    min-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .download-bg{
+    z-index: -3;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: -200px;
+  }
+  .download-text-content {
+    position: relative;
+    color: #fff;
+    font-size: 3vw;
+    margin-left: 20px;  
+    z-index: 1;
+    }
+  .download-button{
+    width: 150px;
+    background-color: #ffffff;
+    height: 50px;
+    font-size: 3vw;
+  }
+  .download-title{
+  font-size: 7vw;
+  }
+  .intro-page{
+    height: 1100px;
+  }
+  .section-5{
+    height: 300px;
+  }
+  .feature-container{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: start;
+  }
+  
+  
+  
+  
+  @media screen and (min-width: 800px) {
+    body {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .app-screens {
+        width: 50%;
+    }
+    .intro-page {
+        display: flex;
+    }
+    .title-page-info-section {
+      position: relative;
+      top: 130px;      
+      width: 50%;
+    }
+    .app-img {
+        transform: scale(0.8);
+        padding-left: 20px;
+    }
+    .logo-text {
+        font-size: 35px;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+    .nav {
+        gap: 50px;
+    }
+    .main-title {
+  
+        font-size: 74px;
+        font-weight: 700;
+    }
+    .screen-shot-1 {
+        top: 1px;
+        left:-30px ;
+        transform: scale(1.1);
+    }
+    .attributes{
+        scale: 1.5;
+        position: relative;
+        left: 210px;
+        top: 150px;
+    }
+    .text-content,.image-content,.advantage-text-content{
+      width: 50%;
+    }
+    .text-content ,.testimonial-container{
+      display: flex;
+      align-items: start;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .advantage-text{
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .feature-container .text-content{
+      flex-direction: column;
+    }
+    .advantage-text-content {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-content img{
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 0px;
+      margin-right: 20px;
+    }
+    .advantage-text img{
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: 0px;
+      margin-right: 20px;
+    }
+    .advantage-container,
+    .features-container {
+        display: flex;
+    }
+    .faq-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .faq-item {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        width: 48%;
+        height: 250px;
+        margin-left: 0%;
+  
+    }
+  
+    .advantage-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .feature-title{
+        text-align: left;
+        margin-left: -370px;
+    }
+  
+    .faq-item:nth-child(4){
+        background-color: rgb(252, 105, 105);
+        color: #fff;
+    }    
+    .faq-item:nth-child(3){
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+    .cta {
+        top: -600px;
+        text-align: start;
+    }
+    .cta h2 {
+        font-size: 4.2vw;;
+        margin-left: 8%;
+    }
+    .cta p {
+        font-size: 1.5vw;
+        margin-left: 8%;
+    }.cta button {
+        font-size: 1.5vw;
+        margin-left: 8%;
+  
+    }
+    .advantage2,.advantage {
+        display: flex;    
+        flex-direction: row;
+    }
+    .content-img{
+        scale: 1.2;
+    }    
+    .content-imgs{
+        scale: 1;
+    }
+    .download-text-content{
+      font-size: 2vw;
+  
+    }
+    .download-bg{
+      z-index:-3;
+      width: 100%;
+      height: 600px;
+    }
+    .company-details{
+        height: 200px;
+        width: 100%;
+    }
+    .company-links,.company-legal,.company-product,.company-newslwtter{
+        height: 150px;
+    }
+    .download-text-content {
+      top: 300px;
+      }
+      .download-btn,
+    .get-started-btn {
+      font-size: 1.2vw;
+    }
+    .text-content h4,.faq-item h4{
+      font-size: 1.4vw;
+    }
+    .text-content p,.faq-item p{
+      font-size: 1vw;
+    }
+    .feature-container{
+      flex-direction: row;
+    }
+    .section-title{
+      font-size: 1.5vw;
+    }
+    .section-sub-title{
+      font-size: 3vw;
+      font-weight: bolder;
+    }
+    .advantage-text h4,.faq-item h4,.testimonial h4{
+      font-size: 2.1vw;
+      font-weight: bolder;
+    }
+    .advantage-text p,.testimonial p,.faq p{
+      font-size: 1.4vw;
+    }
+    .testimonial-title{
+      text-align: center;
+    }
+    .testimonial-text-content{
+      width: 50%;
+    }
+    .testimonial-icons{
+      width: 200px;
+    }
+    .faq h4 , .faq p{
+      padding: 20px 0px 0px 50px;
+    }
+    .section-5{
+      height: 850px;
+    }
+    .download-bg{
+      top: -300px;
+      height: 700px;
+    }
+    .download-text-content{
+      top: 100px;
+      left: 100px;
+    }
+    .download-title{
+      font-size: 3.5vw;
+    }
+    .download-text-content p{
+      font-size: 1.5vw;
+    }
+    .download-button{
+      font-size: 1.5vw;
+      width: 300px;
+    }
+  }
+  
