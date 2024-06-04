@@ -16,11 +16,11 @@ const IntroPage = () => (
         </button>
       </div>
       <div className="attributes">
-        <img src="/attributes.png" alt="App Screens" className="app-img" />
+        <img src={`${process.env.PUBLIC_URL}/attributes.png`} alt="App Screens" className="app-img" />
       </div>
     </div>
     <div className="app-screens">
-      <img className="screen-shot-1" src="/title-img.png" alt="App Screens" />
+      <img className="screen-shot-1" src={`${process.env.PUBLIC_URL}/title-img.png?v=${new Date().getTime()}`} alt="App Screens" />
     </div>
   </section>
 );
